@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+
+{% block conteudo %}
+<div class="login">
+    <img src="static/img/usuario.png">    
+
+        <h1>Login</h1>        
+        <form method="post">
+            <input type="text" name="u" placeholder="Username" required="required" />
+            <input type="password" name="p" placeholder="Password" required="required" />
+            <button type="submit" class="btn btn-primary btn-block btn-large">Enviar</button>
+            <p>Não tem um conta?<a href="{{url_for('cadastro')}}">Cadastre-se</a></p>
+        </form>
+</div>
+{% endblock %}

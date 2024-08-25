@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+
+{% block conteudo %}
+<div class="login">
+    <img src="static/img/usuario.png">    
+
+        <h1>Login</h1>        
+        <form method="post">
+            <input type="text" name="nome" placeholder="Username" required="required" />
+			<input type="email" name="email" placeholder="E-mail" required="required" />
+            <input type="password" name="senha" placeholder="Senha" required="required" />
+			<input type="password" name="conf-senha" placeholder="Confirmar Senha" required="required" />
+            <button type="submit" class="btn btn-primary btn-block btn-large">Cadastrar</button>
+        </form>
+</div>
+	
+{% endblock %}
